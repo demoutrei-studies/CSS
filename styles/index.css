@@ -42,7 +42,7 @@ body {
     font-family: arial;
     min-width: 20vw;
     padding: 1em 2.5em;
-    width: 67vw;
+    width: 80vw;
     
     .name {
       font-weight: bold;
@@ -178,22 +178,29 @@ body {
 }
 
 
+@media screen and (width >= 375px) {
+  .section {
+    width: 73vw;
+  }
+}
+
+
 @media screen and (width >= 425px) {
   .section {
-    width: 50vw;
+    width: 67vw;
   }
 }
 
 
 @media screen and (width >= 768px) {
   .section {
-    width: 45vw;
+    width: 55vw;
   }
 }
 
 
 @media screen and (width >= 1024px) {
   .section {
-    width: 35vw;
+    width: 45vw;
   }
 }
