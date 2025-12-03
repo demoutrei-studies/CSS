@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="assets/css_icon.png">
+    <title>
+      Introductory to CSS
+    </title>
+  </head>
+  <body>
+    <div id="title">
+      <h1 id="name">Introduction to CSS</h1>
+    </div>
+    <section class="section">
+      <h1 class="name">
+        CSS?
+      </h1>
+      <p>
+        CSS (Cascading Style Sheets) is a styling language used to style a web page. It describes how HTML elements are to be displayed on screen, paper, or in other media.
+      </p>
+      <p>
+        CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+      </p>
+    </section>
+    <section class="section">
+      <h1 class="name">
+        Styling
+      </h1>
+      <p>
+        When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet.
+      </p>
+      <p>
+        There are three ways of inserting a style sheet:
+        <ul>
+          <li>Inline CSS</li>
+          <li>Internal CSS</li>
+          <li>External CSS</li>
+        </ul>
+      </p>
+      <section class="subsection">
+        <h2 class="name">Inline CSS</h2>
+        <p>
+          Inline styling may be used to apply a unique style for a single element.
+        </p>
+        <p>
+          To use inline styles, add the <code> style </code> attribute to the relevant element. The <code> style </code> attribute can contain any CSS property.
+        </p>
+<pre class="codeblock">
+<code>
+  This is a &lt;<span class="tag">span</span> <span class="attribute">style</span>=<span class="string">"color: red; font-style: italic;"</span>&gt;Container&lt;/<span class="tag">span</span>&gt;
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Internal CSS</h2>
+        <p>
+          An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <code> &lt;style&gt; </code> element, inside the head section.
+        </p>
+<pre class="codeblock">
+<code>
+  &lt;<span class="tag">style</span>&gt;
+    <span class="selector">span</span> <span class="bracket">&lcub;</span>
+      <span class="property">color</span>: <span class="keyword">red</span>;
+      <span class="property">font-style</span>: <span class="keyword">italic</span>;
+    <span class="bracket">&rcub;</span>
+  &lt;/<span class="tag">style</span>&gt;
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">
+          External CSS
+        </h2>
+        <p>
+          With an external style sheet, you can change the look of an entire website/page by changing just one file. Each HTML page must include a reference to the external style sheet file inside the <code> &lt;link&gt; </code> element, inside the head section.
+        </p>
+<pre class="codeblock">
+<code>
+  &lt;<span class="tag">link</span> <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">href</span>=<span class="string">"<span class="link">styles/index.css</span>"</span>&gt;
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">CSS Syntax</h1>
+      <img id="syntax-image" src="assets/syntax.png">
+    </section>
+    <section class="section">
+      <h1 class="name">Selectors</h1>
+      <p>Selectors are patterns used to match, or select, the elements you want to style.</p>
+      <div id="selectors">
+        <div class="selector">
+          <span class="name">Universal Selector</span>
+        </div>
+        <div class="selector">
+          <span class="name">Type Selector</span>
+        </div>
+        <div class="selector">
+          <span class="name">Attribute Selector</span>
+        </div>
+        <div class="selector">
+          <span class="name">ID Selector</span>
+        </div>
+        <div class="selector">
+          <span class="name">Class Selector</span>
+        </div>
+        <div class="selector">
+          <span class="name">Pseudo Selector</span>
+        </div>
+      </div>
+      <section class="subsection">
+        <h2 class="name">Universal Selectors</h2>
+        <p>Universal selector <code> * </code> matches of any type.</p>
+<pre class="codeblock">
+<code>
+  * <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Type Selectors</h2>
+        <p>
+          Type selectors match elements by node name. In other words, it selects all elements of the given type within a document.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">ID Selectors</h2>
+        <p>
+          ID Selectors match an element based on the value of the element's ID attribute. In order for the element to be selected, its <code> id </code> attribute must match exactly the value given in the selector.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="selector">#base</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">lime</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Class Selectors</h2>
+        <p>
+          Class selectors match elements based on the contents of their <code> class </code> attribute.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="selector">.italic</span> <span class="bracket">&lcub;</span>
+    <span class="property">font-style</span>: <span class="keyword">italic</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Attribute Selectors</h2>
+        <p>
+          Attribute selectors match elements based on the element having a given attribute explicitly set, with options for defining an attribute value or substring value match.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="selector">p</span><span class="bracket">&lsqb;</span><span class="attribute">name</span>=<span class="string">"custom"</span><span class="bracket">&rsqb;</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">yellow</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Pseudo Selectors</h2>
+        <p>
+          A pseudo is a keyword added to a selector that lets you style a specific state of the selected classes or elements.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="selector">h1:hover</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">Comments</h1>
+      <p>
+        Comments are used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the stylesheet. By design, comments have no effect on the layout of a document.
+      </p>
+<pre class="codeblock">
+<code>
+  <span class="comment">/* This is a
+    multi-line comment */</span>
+
+  <span class="selector">h1</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>; <span class="comment">/* Set text color to red */</span>
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Errors</h1>
+      <p>
+        Errors in CSS can lead to unexpected behavior or styles not being applied correctly.
+        <ul>
+          <li>Missing semicolons</li>
+          <li>Invalid property names</li>
+          <li>Invalid values</li>
+          <li>Unclosed braces</li>
+          <li>Extra colons or braces</li>
+        </ul>
+      </p>
+      <section class="subsection">
+        <h2 class="name">Missing Semicolons</h2>
+<pre class="codeblock">
+<code>
+  <span class="comment">/* NOT OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>
+    text-align<span class="error">:</span> <span class="keyword">center</span>;
+  <span class="bracket">&rcub;</span>
+
+  <span class="comment">/* OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+    <span class="property">text-align</span>: <span class="keyword">center</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Invalid Property Name</h2>
+<pre class="codeblock">
+<code>
+  <span class="comment">/* NOT OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property error">colr</span>: <span class="keyword">red</span>;
+  <span class="selector">&rcub;</span>
+
+  <span class="comment">/* OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Invalid Values</h2>
+<pre class="codeblock">
+<code>
+  <span class="comment">/* NOT OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">font-size</span>: <span class="number">-2em</span>;
+  <span class="bracket">&rcub;</span>
+
+  <span class="comment">/* OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">font-size</span>: <span class="number">2em</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Unclosed/Extra Symbols</h2>
+<pre class="codeblock">
+<code>
+  <span class="comment">/* NOT OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span><span class="error">::</span> <span class="keyword">red</span>;
+
+  <span class="selector">h1</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">blue</span>;
+  <span class="bracket">&rcub;</span>
+
+
+  <span class="comment">/* OK */</span>
+  <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">red</span>;
+  <span class="bracket">&rcub;</span>
+
+  <span class="selector">h1</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">blue</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Tips</h2>
+        <ul>
+          <li>Use a code editor with syntax highlighting</li>
+          <li>Validate your CSS with a CSS linter or validator.</li>
+          <li>Write CSS in small sections and test frequently.</li>
+        </ul>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">Colors</h1>
+      <p>
+        Colors are specified by using a predefined color name, or with RGB, HEX, HSL, RGBA, HSLA value.
+      </p>
+      <div class="color" style="background-color: Tomato;">Tomato</div>
+      <div class="color" style="background-color: Orange;">Orange</div>
+      <div class="color" style="background-color: DodgerBlue;">DodgerBlue</div>
+      <div class="color" style="background-color: MediumSeaGreen;">MediumSeaGreen</div>
+      <div class="color" style="background-color: Gray;">Gray</div>
+      <div class="color" style="background-color: SlateBlue;">SlateBlue</div>
+      <div class="color" style="background-color: Violet;">Violet</div>
+      <div class="color" style="background-color: LightGray;">LightGray</div>
+      <section class="subsection">
+        <h2 class="name">RGB</h2>
+        <p>
+          The <code> rgb() </code> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors (<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>). Values of each parameters range from 0 to 255.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-color</span>: <span class="function">rgb</span>(<span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>); <span class="comment">/* red */</span>
+  <span class="property">background-color</span>: <span class="function">rgb</span>(<span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span>); <span class="comment">/* green */</span>
+  <span class="property">background-color</span>: <span class="function">rgb</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>); <span class="comment">/* blue */</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Hex</h2>
+        <p>
+          To specify a color using hexadecimal, prefix a hashtag (#) prior to the value. Numbers 0-9 and letters A-F are used, each corresponding to their numerical value.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-color</span>: <span class="keyword">#f00</span>; <span class="comment">/* red */</span>
+  <span class="property">background-color</span>: <span class="keyword">#0f0</span>; <span class="comment">/* green */</span>
+  <span class="property">background-color</span>: <span class="keyword">#00f</span>; <span class="comment">/* blue */</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">HSL <i>(Hue, Saturation, Lightness)</i></h2>
+        <p>
+          The <code> hsl() </code> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel (from 0 to 360); <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
+        </p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-color</span>: <span class="function">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">50%</span>); <span class="comment">/* red */</span>
+  <span class="property">background-color</span>: <span class="function">hsl</span>(<span class="number">120</span>, <span class="number">100%</span>, <span class="number">50%</span>); <span class="comment">/* blue */</span>
+  <span class="property">background-color</span>: <span class="function">hsl</span>(<span class="number">240</span>, <span class="number">100%</span>, <span class="number">50%</span>); <span class="comment">/* green */</span>
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">Background Color</h1>
+      <p>To set a background color, the <code> background-color </code> property is declared.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-color</span>: <span class="keyword">blue</span>;
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Text Color</h1>
+      <p>To set a color to a text, <code> color </code> property is declared.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">color</span>: <span class="keyword">red</span>;
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Border Color</h1>
+      <p>To set a color to the border, <code> border-color </code> property is declared.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">border</span>: <span class="number">2px</span> <span class="keyword">solid</span>;
+  <span class="property">border-color</span>: <span class="keyword">limegreen</span>;
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Backgrounds</h1>
+      <p>
+        The <code> background </code> property sets all background style properties at once, such as color, image, origin and size, or repeat method. This property is a shorthand for the following CSS properties:
+        <ul>
+          <li><code> background-attachment </code></li>
+          <li><code> background-clip </code></li>
+          <li><code> background-color </code></li>
+          <li><code> background-image </code></li>
+          <li><code> background-origin </code></li>
+          <li><code> background-position </code></li>
+          <li><code> background-repeat </code></li>
+          <li><code> background-size </code></li>
+        </ul>
+      </p>
+      <section class="subsection">
+        <h2 class="name">Image</h2>
+        <p><code> background-image </code> property is declared to assign a background image to the element.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-image</span>: <span class="function">url</span>(<span class="string">'<span class="link">/assets/cat.jpg</span>'</span>);
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Repeat</h2>
+        <p><code> background-repeat </code> property sets how background images are repeated.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-image</span>: <span class="function">url</span>(<span class="string">'<span class="link">/assets/cat.jpg</span>'</span>);
+  <span class="property">background-repeat</span>: <span class="keyword">repeat</span>;
+  
+  <span class="property">background-image</span>: <span class="function">url</span>(<span class="string">'<span class="link">/assets/cat.jpg</span>'</span>);
+  <span class="property">background-repeat</span>: <span class="keyword">no-repeat</span>;
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Sizes</h2>
+        <p>The <code> background-size </code> property sets the size of the element's background image.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">background-image</span>: <span class="function">url</span>(<span class="string">'<span class="link">/assets/cat.jpg</span>'</span>);
+  <span class="property">background-repeat</span>: <span class="keyword">no-repeat</span>;
+  <span class="property">background-size</span>: <span class="number">50%</span>;
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">Borders</h1>
+      <p>Boreders are used to define the visual boundaries around HTML elements.</p>
+      <section class="subsection">
+        <h2 class="name">Styles</h2>
+        <p><code> border-style </code> property is declared to set the border's style.</p>
+        <div id="borders">
+          <div class="border" style="border-style: dotted;">
+            <code>
+              border-style: dotted;
+            </code>
+          </div>
+          <div class="border" style="border-style: dashed;">
+            <code>
+              border-style: dashed;
+            </code>
+          </div>
+          <div class="border" style="border-style: solid;">
+            <code>
+              border-style: solid;
+            </code>
+          </div>
+          <div class="border" style="border-style: double;">
+            <code>
+              border-style: double;
+            </code>
+          </div>
+          <div class="border" style="border-style: groove;">
+            <code>
+              border-style; groove;
+            </code>
+          </div>
+          <div class="border" style="border-style: ridge;">
+            <code>
+              border-style: ridge;
+            </code>
+          </div>
+          <div class="border" style="border-style: inset;">
+            <code>
+              border-style: inset;
+            </code>
+          </div>
+          <div class="border" style="border-style: outset;">
+            <code>
+              border-style: outset;
+            </code>
+          </div>
+          <div class="border" style="border-style: none;">
+            <code>
+              border-style: none;
+            </code>
+          </div>
+          <div class="border" style="border-style: hidden;">
+            <code>
+              border-style: hidden;
+            </code>
+          </div>
+        </div>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Width</h2>
+        <p><code> border-width </code> property is declared to set the border's width.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">border-width</span>: <span class="number">0.5em</span>; <span class="comment">/* all sides */</span>
+  <span class="property">border-width</span>: <span class="number">0.5em 0 0.25em 0.75em</span>; <span class="comment">/* top right bottom left */</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Color</h2>
+        <p><code> border-color </code> property is declared to set the border's color.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">border-color</span>: <span class="keyword">limegreen</span>; <span class="comment">/* all sides */</span>
+  <span class="property">border-color</span>: <span class="keyword">limegreen red blue yellow</span>; <span class="comment">/* top right bottom left */</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Sides</h2>
+<pre class="codeblock">
+<code>
+  <span class="property">border-left-width</span>: <span class="number">0.5em</span>;
+  <span class="property">border-left-color</span>: <span class="keyword">lightblue</span>;
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Radius</h2>
+        <p><code> border-radius </code> property is declared to apply rounded corners to the border.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">border</span>: <span class="number">4px</span> <span class="keyword">solid white</span>;
+  <span class="property">border-radius</span>: <span class="number">13px</span>;
+
+  <span class="property">border</span>: <span class="number">4px</span> <span class="keyword">solid white</span>;
+  <span class="property">border-radius</span>: <span class="number">50%</span>;
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
+      <h1 class="name">Margins</h1>
+      <p>
+        Margins are properties used to create space around an element, outside of any defined borders. They define the distance between an element's border and the surrounding elements.
+      </p>
+      <p>
+        <code> margin </code> property is declared to set the element's margin. By default, due to historical reasons, the <code> &lt;body&gt; </code> tag has a default margin of 8px.
+      </p>
+<pre class="codeblock">
+<code>
+  <span class="property">margin</span>: <span class="number">25px</span>; <span class="comment">/* all sides */</span>
+  <span class="property">margin</span>: <span class="number">25px 50px</span>; <span class="comment">/* top-bottom left-right */</span>
+  <span class="property">margin</span>: <span class="number">25px 33px 50px</span>; <span class="comment">/* top left-right bottom */</span>
+  <span class="property">margin</span>: <span class="number">25px 33px 50px 67px</span>; <span class="comment">/* top right bottom left */</span>
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Padding</h1>
+      <p>Padding properties are used to generate space around an element's content, inside of any defined borders.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">padding</span>: <span class="number">4em</span>;
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">Height and Width</h1>
+      <p><code> height </code> and <code> width </code> properties are declared to set an element's height and width dimensions.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">height</span>: <span class="number">50px</span>;
+  <span class="property">width</span>: <span class="number"> 100px</span>;
+</code>
+</pre>
+    </section>
+    <section class="section">
+      <h1 class="name">max-width</h1>
+      <p><code> max-width </code> property sets the maximum allowed width of an element. This prevents the width of an element to be larger than the <code> max-width </code> property value.</p>
+<pre class="codeblock">
+<code>
+  <span class="property">max-width</span>: <span class="number">50px</span>;
+  <span class="property">width</span>: <span class="number">100px</span>;
+</code>
+</pre>
+    </section>
+  </body>
+</html>
