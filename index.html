@@ -212,6 +212,48 @@
       </section>
     </section>
     <section class="section">
+      <h1 class="name">Values and Units</h1>
+      <p>Values can be assigned to CSS properties. These include keywords, data types, and functions.</p>
+      <p>Data types define typical values &lpar;including keywords and units&rpar; accepted by CSS properties and functions.</p>
+      <section class="subsection">
+        <h2 class="name">Keyword</h2>
+        <p><code>initial</code>: value specified as the property's initial value.</p>
+        <p><code>inherit</code>: computed value of the property on the element's parent.</p>
+        <p><code>max-content</code>: represents the maximum intrinsic size of an element. The keyword expands the element to the largest size needed to display its content without any soft wraps.</p>
+        <p><code>min-content</code>: represents the minimum intrinsic size of an element. The keyword shrinks the element to the smallest possible size without causing avoidable overflow of its content.</p>
+      </section>
+      <section class="subsection">
+        <h2 class="name">String</h2>
+        <p>A string represents a sequence of characters. Strings are used in numerous CSS properties, such as <code>content</code>, <code>font-family</code>, and <code>quotes</code>.</p>
+        <p>The <code>&lt;string&gt;</code> data type is composed of any number of Unicode characters surrounded by either double &lpar;<code>"</code>&rpar; or single &lpar;<code>'</code>&rpar; quotes.</p>
+      </section>
+      <section class="subsection">
+        <h2 class="name">URL</h2>
+        <p>The <code>&lt;url&gt;</code> data type is a pointer to a resource. The resource could be an image, video, CSS file, fotn file, SVG feature, etc.</p>
+        <p>The data type is initialized with the <code>url&lpar;&rpar;</code> function.</p>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Numeric</h2>
+        <p><code>&lt;integer&gt;</code>: One or more decimal units 0 through 9, optionally preceded by a negative &lpar;-&rpar; or positive &lpar;+&rpar; sign.</p>
+        <p><code>&lt;number&gt;</code>: Real numbers which may also have a fractional component, for example <code>1</code> or <code>1.34</code>.</p>
+        <p><code>&lt;dimension&gt;</code>: A number with a unit attached to it. This type includes distances &lpar;<code>&lt;time&gt;</code>&rpar;, resolutions &lpar;<code>&lt;resolution&gt;</code>&rpar;, and other quantities.</p>
+        <p><code>&lt;percentage&gt;</code>: A number with a percentage sign attached to it, for example <code>10%</code>.</p>
+        <p><code>&lt;ratio&gt;</code>: A ratio, written with the syntax <code>&lt;number&gt; / &lt;number&gt;</code>.</p>
+      </section>
+      <section class="subsection">
+        <h2 class="name">&lt;length&gt;</h2>
+        <p>The <code>&lt;length&gt;</code> data type represents a distance value. Lengths can be used in numerous CSS properties, such as <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, <code>border-width</code>, <code>font-size</code>, and <code>text-shadow</code>.</p>
+        <p><code>em</code>: represents the calculated font-size of the element. If used on the <code>font-size</code> property itself, it represents the inherited <code>font-size</code> of the element.</p>
+        <p><code>vh</code>, <code>vw</code>: represents the percentage of the height and width of the viewport's initial containing block.</p>
+        <p><code>px</code>: One pixel. For screen displays, it traditionally represents one device pixel &lpar;dot&rpar;. However, for printers and high-resolution screens, one CSS pixel implies multiple device pixels. <code>1px = 1in / 96</code>.</p>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Value Functions</h2>
+        <p>Value functions are statements that invoke special data processing or calculations to return a value for a property. Value functions represent more complex data types and they may take some input arguments to calculate the return value.</p>
+        <p><code>calc&lpar;&rpar;</code>: represents basic arithmetic calculatiosn on numerical values.</p>
+      </section>
+    </section>
+    <section class="section">
       <h1 class="name">Comments</h1>
       <p>
         Comments are used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the stylesheet. By design, comments have no effect on the layout of a document.

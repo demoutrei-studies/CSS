@@ -143,38 +143,6 @@ body {
           justify-content: center;
         }
       }
-      
-      
-      .codeblock {
-        background-color: #222;
-        border-radius: 15px;
-        font-size: 1.5em;
-        overflow-x: auto;
-        
-        .tag { color: #006ee6; }
-        
-        .attribute { color: #48cae4; }
-        
-        .selector { color: #f98129; }
-        
-        .bracket { color: magenta; }
-        
-        .string { color: #cc5800; }
-        
-        .keyword { color: #e25825; }
-        
-        .property { color: lightgray; }
-        
-        .link { text-decoration: 2px underline; }
-        
-        .comment { color: gray; }
-        
-        .error { text-decoration: 2px underline wavy red; }
-        
-        .number { color: limegreen; }
-        
-        .function { color: yellow; }
-      }
     }
   }
 }
