@@ -16,7 +16,7 @@
         CSS?
       </h1>
       <p>
-        CSS (Cascading Style Sheets) is a styling language used to style a web page. It describes how HTML elements are to be displayed on screen, paper, or in other media.
+        CSS &lpar;Cascading Style Sheets&rpar; is a styling language used to style a web page. It describes how HTML elements are to be displayed on screen, paper, or in other media.
       </p>
       <p>
         CSS saves a lot of work. It can control the layout of multiple web pages all at once.
@@ -380,20 +380,20 @@
       <section class="subsection">
         <h2 class="name">RGB</h2>
         <p>
-          The <code> rgb() </code> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors (<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>). Values of each parameters range from 0 to 255.
+          The <code> rgb&lpar;&rpar; </code> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors &lpar;<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>&rpar;. Values of each parameters range from 0 to 255.
         </p>
 <pre class="codeblock">
 <code>
-  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">(</span><span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span><span class="bracket">)</span>; <span class="comment">/* red */</span>
-  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">(</span><span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span><span class="bracket">)</span>; <span class="comment">/* green */</span>
-  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">(</span><span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span><span class="bracket">)</span>; <span class="comment">/* blue */</span>
+  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">&lpar;</span><span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span><span class="bracket">&rpar;</span>; <span class="comment">/* red */</span>
+  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">&lpar;</span><span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span><span class="bracket">&rpar;</span>; <span class="comment">/* green */</span>
+  <span class="property">background-color</span>: <span class="function">rgb</span><span class="bracket">&lpar;</span><span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span><span class="bracket">&rpar;</span>; <span class="comment">/* blue */</span>
 </code>
 </pre>
       </section>
       <section class="subsection">
         <h2 class="name">Hex</h2>
         <p>
-          To specify a color using hexadecimal, prefix a hashtag (#) prior to the value. Numbers 0-9 and letters A-F are used, each corresponding to their numerical value.
+          To specify a color using hexadecimal, prefix a hashtag &lpar;#&rpar; prior to the value. Numbers 0-9 and letters A-F are used, each corresponding to their numerical value.
         </p>
 <pre class="codeblock">
 <code>
@@ -404,15 +404,15 @@
 </pre>
       </section>
       <section class="subsection">
-        <h2 class="name">HSL <i>(Hue, Saturation, Lightness)</i></h2>
+        <h2 class="name">HSL <i>&lpar;Hue, Saturation, Lightness&rpar;</i></h2>
         <p>
-          The <code> hsl() </code> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel (from 0 to 360); <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
+          The <code> hsl&lpar;&rpar; </code> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel &lpar;from 0 to 360&rpar;; <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
         </p>
 <pre class="codeblock">
 <code>
-  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">(</span><span class="number">0</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">)</span>; <span class="comment">/* red */</span>
-  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">(</span><span class="number">120</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">)</span>; <span class="comment">/* blue */</span>
-  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">(</span><span class="number">240</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">)</span>; <span class="comment">/* green */</span>
+  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">&lpar;</span><span class="number">0</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">&rpar;</span>; <span class="comment">/* red */</span>
+  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">&lpar;</span><span class="number">120</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">&rpar;</span>; <span class="comment">/* blue */</span>
+  <span class="property">background-color</span>: <span class="function">hsl</span><span class="bracket">&lpar;</span><span class="number">240</span>, <span class="number">100%</span>, <span class="number">50%</span><span class="bracket">&rpar;</span>; <span class="comment">/* green */</span>
 </code>
 </pre>
       </section>
@@ -465,7 +465,7 @@
         <p><code> background-image </code> property is declared to assign a background image to the element.</p>
 <pre class="codeblock">
 <code>
-  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">(</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">)</span>;
+  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">&lpar;</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">&rpar;</span>;
 </code>
 </pre>
       </section>
@@ -474,10 +474,10 @@
         <p><code> background-repeat </code> property sets how background images are repeated.</p>
 <pre class="codeblock">
 <code>
-  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">(</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">)</span>;
+  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">&lpar;</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">&rpar;</span>;
   <span class="property">background-repeat</span>: <span class="keyword">repeat</span>;
   
-  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">(</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">)</span>;
+  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">&lpar;</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">&rpar;</span>;
   <span class="property">background-repeat</span>: <span class="keyword">no-repeat</span>;
 </code>
 </pre>
@@ -487,7 +487,7 @@
         <p>The <code> background-size </code> property sets the size of the element's background image.</p>
 <pre class="codeblock">
 <code>
-  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">(</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">)</span>;
+  <span class="property">background-image</span>: <span class="function">url</span><span class="bracket">&lpar;</span><span class="string">'<span class="link">/assets/cat.jpg</span>'</span><span class="bracket">&rpar;</span>;
   <span class="property">background-repeat</span>: <span class="keyword">no-repeat</span>;
   <span class="property">background-size</span>: <span class="number">50%</span>;
 </code>
