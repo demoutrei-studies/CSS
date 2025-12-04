@@ -186,6 +186,32 @@
       </section>
     </section>
     <section class="section">
+      <h1 class="name">Combinators</h1>
+      <p>Combinators define the relationship between the selectors. Using various selectors and combinators, you can precisely select and style the desired elements based on their type, attributes, state, or relationship to other elements.</p>
+      <section class="subsection">
+        <h2 class="name">Descendant</h2>
+        <p>The descendant combinator, denoted with one or more spaces, selects nodes that are descendants of the first element. For example, <code> div span </code> will match all <code> &lt;span&gt; </code> elements that are inside a <code> &lt;div&gt; </code> element.</p>
+<pre class="codeblock">
+<code>
+  <span class="selector">div span</span> <span class="bracket">&lcub;</span>
+    <span class="comment">/* property rule styling */</span>
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+      <section class="subsection">
+        <h2 class="name">Child</h2>
+        <p>Child combinator is more specific than the descendant combinator. Denoted with the greater-than character <code> &gt; </code>, the child combinator selects nodes that are direct of the first element. Comparing with our previous example, <code> div &gt; span </code> will match only the <code> &lt;span&gt; </code> elements that are direct children of a <code> &lt;div&gt; </code> element.</p>
+<pre class="codeblock">
+<code>
+  <span class="selector">div <span class="combinator">&gt;</span> span</span> <span class="bracket">&lcub;</span>
+    <span class="comment">/* property rule styling */</span>
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+      </section>
+    </section>
+    <section class="section">
       <h1 class="name">Comments</h1>
       <p>
         Comments are used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the stylesheet. By design, comments have no effect on the layout of a document.
@@ -428,7 +454,7 @@
     </section>
     <section class="section">
       <h1 class="name">Borders</h1>
-      <p>Boreders are used to define the visual boundaries around HTML elements.</p>
+      <p>Borders are used to define the visual boundaries around HTML elements.</p>
       <section class="subsection">
         <h2 class="name">Styles</h2>
         <p><code> border-style </code> property is declared to set the border's style.</p>

@@ -116,6 +116,8 @@ body {
       .number { color: limegreen; }
       
       .function { color: yellow; }
+
+      .combinator { color: lightgray; };
     }
     
     .subsection {
