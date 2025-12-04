@@ -8,10 +8,192 @@
     </title>
   </head>
   <body>
+    <button id="navbar-button" onclick="openNavBar()">
+      <img class="image" src="assets/navbar.png">
+    </button>
+    <nav id="navigation">
+      <div id="header">
+        <div id="button">
+          <button id="return-button" onclick="closeNavBar()">
+            <img class="image" src="assets/return.png">
+          </button>
+        </div>
+        <div id="title">Table of Contents</div>
+      </div>
+      <ul>
+        <li>
+          <a href="#css">CSS?</a>
+        </li>
+        <li>
+          <a href="#styling">Styling</a>
+          <ul>
+            <li>
+              <a href="#inline-styling">Inline</a>
+            </li>
+            <li>
+              <a href="#internal-styling">Internal</a>
+            </li>
+            <li>
+              <a href="#external-styling">External</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#syntax">CSS Syntax</a></li>
+        <li>
+          <a href="#selectors">Selectors</a>
+          <ul>
+            <li>
+              <a href="#selector-universal">Universal</a>
+            </li>
+            <li>
+              <a href="#selector-type">Type</a>
+            </li>
+            <li>
+              <a href="#selector-id">ID</a>
+            </li>
+            <li>
+              <a href="#selector-class">Class</a>
+            </li>
+            <li>
+              <a href="#selector-attribute">Attribute</a>
+            </li>
+            <li>
+              <a href="#selector-pseudo">Pseudo</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#combinator">Combinators</a>
+          <ul>
+            <li>
+              <a href="#combinator-descendant">Descendant</a>
+            </li>
+            <li>
+              <a href="#combinator-child">Child</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#values-and-units">Values and Units</a>
+          <ul>
+            <li>
+              <a href="#keyword">Keyword</a>
+            </li>
+            <li>
+              <a href="#string">String</a>
+            </li>
+            <li>
+              <a href="#url">URL</a>
+            </li>
+            <li>
+              <a href="#numeric">Numeric</a>
+            </li>
+            <li>
+              <a href="#length">&lt;length&gt;</a>
+            </li>
+            <li>
+              <a href="#value-functions">Value Functions</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#comments">Comments</a>
+        </li>
+        <li>
+          <a href="#errors">Errors</a>
+          <ul>
+            <li>
+              <a href="#missing-semicolons">Missing Semicolons</a>
+            </li>
+            <li>
+              <a href="#invalid-property-name">Invalid Property Name</a>
+            </li>
+            <li>
+              <a href="#invalid-values">Invalid Values</a>
+            </li>
+            <li>
+              <a href="#unclosed-extra-symbols">Unclosed/Extra Symbols</a>
+            </li>
+            <li>
+              <a href="#tips">Tips</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#colors">Colors</a>
+          <ul>
+            <li>
+              <a href="#rgb">RGB</a>
+            </li>
+            <li>
+              <a href="#hex">Hex</a>
+            </li>
+            <li>
+              <a href="#hsl">HSL</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#background-color">Background Color</a>
+        </li>
+        <li>
+          <a href="#text-color">Text Color</a>
+        </li>
+        <li>
+          <a href="#border-color">Border Color</a>
+        </li>
+        <li>
+          <a href="#backgrounds">Backgrounds</a>
+          <ul>
+            <li>
+              <a href="#image">Image</a>
+            </li>
+            <li>
+              <a href="#repeat">Repeat</a>
+            </li>
+            <li>
+              <a href="#sizes">Sizes</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#borders">Borders</a>
+          <ul>
+            <li>
+              <a href="#border-style">Styles</a>
+            </li>
+            <li>
+              <a href="#border-width">Width</a>
+            </li>
+            <li>
+              <a href="#border-color">Color</a>
+            </li>
+            <li>
+              <a href="#border-sizes">Sizes</a>
+            </li>
+            <li>
+              <a href="#border-radius">Radius</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#margins">Margins</a>
+        </li>
+        <li>
+          <a href="#padding">Padding</a>
+        </li>
+        <li>
+          <a href="#height-and-width">Height and Width</a>
+        </li>
+        <li>
+          <a href="#max-width">max-width</a>
+        </li>
+      </ul>
+    </nav>
     <div id="title">
       <h1 id="name">Introduction to CSS</h1>
     </div>
-    <section class="section">
+    <section id="css" class="section">
       <h1 class="name">
         CSS?
       </h1>
@@ -22,7 +204,7 @@
         CSS saves a lot of work. It can control the layout of multiple web pages all at once.
       </p>
     </section>
-    <section class="section">
+    <section id="styling" class="section">
       <h1 class="name">
         Styling
       </h1>
@@ -37,7 +219,7 @@
           <li>External CSS</li>
         </ul>
       </p>
-      <section class="subsection">
+      <section id="inline-styling" class="subsection">
         <h2 class="name">Inline CSS</h2>
         <p>
           Inline styling may be used to apply a unique style for a single element.
@@ -51,7 +233,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="internal-styling" class="subsection">
         <h2 class="name">Internal CSS</h2>
         <p>
           An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <code> &lt;style&gt; </code> element, inside the head section.
@@ -67,7 +249,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="external-styling" class="subsection">
         <h2 class="name">
           External CSS
         </h2>
@@ -81,11 +263,11 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="syntax" class="section">
       <h1 class="name">CSS Syntax</h1>
       <img id="syntax-image" src="assets/syntax.png">
     </section>
-    <section class="section">
+    <section id="selectors" class="section">
       <h1 class="name">Selectors</h1>
       <p>Selectors are patterns used to match, or select, the elements you want to style.</p>
       <div id="selectors">
@@ -108,7 +290,7 @@
           <span class="name">Pseudo Selector</span>
         </div>
       </div>
-      <section class="subsection">
+      <section id="selector-universal" class="subsection">
         <h2 class="name">Universal Selectors</h2>
         <p>Universal selector <code> * </code> matches of any type.</p>
 <pre class="codeblock">
@@ -119,7 +301,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="selector-type" class="subsection">
         <h2 class="name">Type Selectors</h2>
         <p>
           Type selectors match elements by node name. In other words, it selects all elements of the given type within a document.
@@ -132,7 +314,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="selector-id" class="subsection">
         <h2 class="name">ID Selectors</h2>
         <p>
           ID Selectors match an element based on the value of the element's ID attribute. In order for the element to be selected, its <code> id </code> attribute must match exactly the value given in the selector.
@@ -145,7 +327,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="selector-class" class="subsection">
         <h2 class="name">Class Selectors</h2>
         <p>
           Class selectors match elements based on the contents of their <code> class </code> attribute.
@@ -158,7 +340,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="selector-attribute" class="subsection">
         <h2 class="name">Attribute Selectors</h2>
         <p>
           Attribute selectors match elements based on the element having a given attribute explicitly set, with options for defining an attribute value or substring value match.
@@ -171,7 +353,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="selector-pseudo" class="subsection">
         <h2 class="name">Pseudo Selectors</h2>
         <p>
           A pseudo is a keyword added to a selector that lets you style a specific state of the selected classes or elements.
@@ -185,10 +367,10 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="combinator" class="section">
       <h1 class="name">Combinators</h1>
       <p>Combinators define the relationship between the selectors. Using various selectors and combinators, you can precisely select and style the desired elements based on their type, attributes, state, or relationship to other elements.</p>
-      <section class="subsection">
+      <section id="combinator-descendant" class="subsection">
         <h2 class="name">Descendant</h2>
         <p>The descendant combinator, denoted with one or more spaces, selects nodes that are descendants of the first element. For example, <code> div span </code> will match all <code> &lt;span&gt; </code> elements that are inside a <code> &lt;div&gt; </code> element.</p>
 <pre class="codeblock">
@@ -199,7 +381,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="combinator-child" class="subsection">
         <h2 class="name">Child</h2>
         <p>Child combinator is more specific than the descendant combinator. Denoted with the greater-than character <code> &gt; </code>, the child combinator selects nodes that are direct of the first element. Comparing with our previous example, <code> div &gt; span </code> will match only the <code> &lt;span&gt; </code> elements that are direct children of a <code> &lt;div&gt; </code> element.</p>
 <pre class="codeblock">
@@ -211,28 +393,28 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="values-and-units" class="section">
       <h1 class="name">Values and Units</h1>
       <p>Values can be assigned to CSS properties. These include keywords, data types, and functions.</p>
       <p>Data types define typical values &lpar;including keywords and units&rpar; accepted by CSS properties and functions.</p>
-      <section class="subsection">
+      <section id="keyword" class="subsection">
         <h2 class="name">Keyword</h2>
         <p><code>initial</code>: value specified as the property's initial value.</p>
         <p><code>inherit</code>: computed value of the property on the element's parent.</p>
         <p><code>max-content</code>: represents the maximum intrinsic size of an element. The keyword expands the element to the largest size needed to display its content without any soft wraps.</p>
         <p><code>min-content</code>: represents the minimum intrinsic size of an element. The keyword shrinks the element to the smallest possible size without causing avoidable overflow of its content.</p>
       </section>
-      <section class="subsection">
+      <section id="string" class="subsection">
         <h2 class="name">String</h2>
         <p>A string represents a sequence of characters. Strings are used in numerous CSS properties, such as <code>content</code>, <code>font-family</code>, and <code>quotes</code>.</p>
         <p>The <code>&lt;string&gt;</code> data type is composed of any number of Unicode characters surrounded by either double &lpar;<code>"</code>&rpar; or single &lpar;<code>'</code>&rpar; quotes.</p>
       </section>
-      <section class="subsection">
+      <section id="url" class="subsection">
         <h2 class="name">URL</h2>
         <p>The <code>&lt;url&gt;</code> data type is a pointer to a resource. The resource could be an image, video, CSS file, fotn file, SVG feature, etc.</p>
         <p>The data type is initialized with the <code>url&lpar;&rpar;</code> function.</p>
       </section>
-      <section class="subsection">
+      <section id="numeric" class="subsection">
         <h2 class="name">Numeric</h2>
         <p><code>&lt;integer&gt;</code>: One or more decimal units 0 through 9, optionally preceded by a negative &lpar;-&rpar; or positive &lpar;+&rpar; sign.</p>
         <p><code>&lt;number&gt;</code>: Real numbers which may also have a fractional component, for example <code>1</code> or <code>1.34</code>.</p>
@@ -240,20 +422,20 @@
         <p><code>&lt;percentage&gt;</code>: A number with a percentage sign attached to it, for example <code>10%</code>.</p>
         <p><code>&lt;ratio&gt;</code>: A ratio, written with the syntax <code>&lt;number&gt; / &lt;number&gt;</code>.</p>
       </section>
-      <section class="subsection">
+      <section id="length" class="subsection">
         <h2 class="name">&lt;length&gt;</h2>
         <p>The <code>&lt;length&gt;</code> data type represents a distance value. Lengths can be used in numerous CSS properties, such as <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, <code>border-width</code>, <code>font-size</code>, and <code>text-shadow</code>.</p>
         <p><code>em</code>: represents the calculated font-size of the element. If used on the <code>font-size</code> property itself, it represents the inherited <code>font-size</code> of the element.</p>
         <p><code>vh</code>, <code>vw</code>: represents the percentage of the height and width of the viewport's initial containing block.</p>
         <p><code>px</code>: One pixel. For screen displays, it traditionally represents one device pixel &lpar;dot&rpar;. However, for printers and high-resolution screens, one CSS pixel implies multiple device pixels. <code>1px = 1in / 96</code>.</p>
       </section>
-      <section class="subsection">
+      <section id="value-functions" class="subsection">
         <h2 class="name">Value Functions</h2>
         <p>Value functions are statements that invoke special data processing or calculations to return a value for a property. Value functions represent more complex data types and they may take some input arguments to calculate the return value.</p>
         <p><code>calc&lpar;&rpar;</code>: represents basic arithmetic calculatiosn on numerical values.</p>
       </section>
     </section>
-    <section class="section">
+    <section id="comments" class="section">
       <h1 class="name">Comments</h1>
       <p>
         Comments are used to add explanatory notes to the code or to prevent the browser from interpreting specific parts of the stylesheet. By design, comments have no effect on the layout of a document.
@@ -269,7 +451,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="errors" class="section">
       <h1 class="name">Errors</h1>
       <p>
         Errors in CSS can lead to unexpected behavior or styles not being applied correctly.
@@ -281,7 +463,7 @@
           <li>Extra colons or braces</li>
         </ul>
       </p>
-      <section class="subsection">
+      <section id="missing-semicolons" class="subsection">
         <h2 class="name">Missing Semicolons</h2>
 <pre class="codeblock">
 <code>
@@ -299,7 +481,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="invalid-property-name" class="subsection">
         <h2 class="name">Invalid Property Name</h2>
 <pre class="codeblock">
 <code>
@@ -315,7 +497,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="invalid-values" class="subsection">
         <h2 class="name">Invalid Values</h2>
 <pre class="codeblock">
 <code>
@@ -331,7 +513,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="unclosed-extra-symbols" class="subsection">
         <h2 class="name">Unclosed/Extra Symbols</h2>
 <pre class="codeblock">
 <code>
@@ -355,7 +537,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="tips" class="subsection">
         <h2 class="name">Tips</h2>
         <ul>
           <li>Use a code editor with syntax highlighting</li>
@@ -364,7 +546,7 @@
         </ul>
       </section>
     </section>
-    <section class="section">
+    <section id="colors" class="section">
       <h1 class="name">Colors</h1>
       <p>
         Colors are specified by using a predefined color name, or with RGB, HEX, HSL, RGBA, HSLA value.
@@ -377,7 +559,7 @@
       <div class="color" style="background-color: SlateBlue;">SlateBlue</div>
       <div class="color" style="background-color: Violet;">Violet</div>
       <div class="color" style="background-color: LightGray;">LightGray</div>
-      <section class="subsection">
+      <section id="rgb" class="subsection">
         <h2 class="name">RGB</h2>
         <p>
           The <code> rgb&lpar;&rpar; </code> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors &lpar;<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>&rpar;. Values of each parameters range from 0 to 255.
@@ -390,7 +572,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="hex" class="subsection">
         <h2 class="name">Hex</h2>
         <p>
           To specify a color using hexadecimal, prefix a hashtag &lpar;#&rpar; prior to the value. Numbers 0-9 and letters A-F are used, each corresponding to their numerical value.
@@ -403,7 +585,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="hsl" class="subsection">
         <h2 class="name">HSL <i>&lpar;Hue, Saturation, Lightness&rpar;</i></h2>
         <p>
           The <code> hsl&lpar;&rpar; </code> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel &lpar;from 0 to 360&rpar;; <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
@@ -417,7 +599,7 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="background-color" class="section">
       <h1 class="name">Background Color</h1>
       <p>To set a background color, the <code> background-color </code> property is declared.</p>
 <pre class="codeblock">
@@ -426,7 +608,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="text-color" class="section">
       <h1 class="name">Text Color</h1>
       <p>To set a color to a text, <code> color </code> property is declared.</p>
 <pre class="codeblock">
@@ -435,7 +617,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="border-color" class="section">
       <h1 class="name">Border Color</h1>
       <p>To set a color to the border, <code> border-color </code> property is declared.</p>
 <pre class="codeblock">
@@ -445,7 +627,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="backgrounds" class="section">
       <h1 class="name">Backgrounds</h1>
       <p>
         The <code> background </code> property sets all background style properties at once, such as color, image, origin and size, or repeat method. This property is a shorthand for the following CSS properties:
@@ -460,7 +642,7 @@
           <li><code> background-size </code></li>
         </ul>
       </p>
-      <section class="subsection">
+      <section id="image" class="subsection">
         <h2 class="name">Image</h2>
         <p><code> background-image </code> property is declared to assign a background image to the element.</p>
 <pre class="codeblock">
@@ -469,7 +651,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="repeat" class="subsection">
         <h2 class="name">Repeat</h2>
         <p><code> background-repeat </code> property sets how background images are repeated.</p>
 <pre class="codeblock">
@@ -482,7 +664,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="sizes" class="subsection">
         <h2 class="name">Sizes</h2>
         <p>The <code> background-size </code> property sets the size of the element's background image.</p>
 <pre class="codeblock">
@@ -494,10 +676,10 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="borders" class="section">
       <h1 class="name">Borders</h1>
       <p>Borders are used to define the visual boundaries around HTML elements.</p>
-      <section class="subsection">
+      <section id="border-style" class="subsection">
         <h2 class="name">Styles</h2>
         <p><code> border-style </code> property is declared to set the border's style.</p>
         <div id="borders">
@@ -553,7 +735,7 @@
           </div>
         </div>
       </section>
-      <section class="subsection">
+      <section id="border-width" class="subsection">
         <h2 class="name">Width</h2>
         <p><code> border-width </code> property is declared to set the border's width.</p>
 <pre class="codeblock">
@@ -563,7 +745,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="border-color" class="subsection">
         <h2 class="name">Color</h2>
         <p><code> border-color </code> property is declared to set the border's color.</p>
 <pre class="codeblock">
@@ -573,7 +755,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="border-sides" class="subsection">
         <h2 class="name">Sides</h2>
 <pre class="codeblock">
 <code>
@@ -582,7 +764,7 @@
 </code>
 </pre>
       </section>
-      <section class="subsection">
+      <section id="border-radius" class="subsection">
         <h2 class="name">Radius</h2>
         <p><code> border-radius </code> property is declared to apply rounded corners to the border.</p>
 <pre class="codeblock">
@@ -596,7 +778,7 @@
 </pre>
       </section>
     </section>
-    <section class="section">
+    <section id="margins" class="section">
       <h1 class="name">Margins</h1>
       <p>
         Margins are properties used to create space around an element, outside of any defined borders. They define the distance between an element's border and the surrounding elements.
@@ -613,7 +795,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="padding" class="section">
       <h1 class="name">Padding</h1>
       <p>Padding properties are used to generate space around an element's content, inside of any defined borders.</p>
 <pre class="codeblock">
@@ -622,7 +804,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="height-and-width" class="section">
       <h1 class="name">Height and Width</h1>
       <p><code> height </code> and <code> width </code> properties are declared to set an element's height and width dimensions.</p>
 <pre class="codeblock">
@@ -632,7 +814,7 @@
 </code>
 </pre>
     </section>
-    <section class="section">
+    <section id="max-width" class="section">
       <h1 class="name">max-width</h1>
       <p><code> max-width </code> property sets the maximum allowed width of an element. This prevents the width of an element to be larger than the <code> max-width </code> property value.</p>
 <pre class="codeblock">
@@ -642,5 +824,6 @@
 </code>
 </pre>
     </section>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

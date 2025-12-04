@@ -14,6 +14,91 @@ body {
 
 
 @media screen and (width >= 320px) {
+  #navbar-button {
+    background-color: var(--color-primary);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    width: max-content;
+    z-index: 0;
+    
+    & .image {
+      max-width: 100%;
+      width: 10em;
+    }
+  }
+  
+  #navigation {
+    background-color: var(--color-secondary);
+    border-right-color: white;
+    border-right-style: solid;
+    border-right-width: 0.85em;
+    display: none;
+    font-family: arial;
+    left: 0;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 0.5em;
+    position: fixed;
+    top: 0;
+    width: max-content;
+    z-index: 1;
+
+    & #header {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      padding: 1em 2em;
+      position: relative;
+
+      & #title {
+        border: none;
+        color: white;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 0;
+        padding: 0.5em;
+        position: relative;
+        width: max-content;
+      }
+    }
+
+    & #return-button {
+      background-color: var(--color-secondary);
+      border: none;
+      position: relative;
+      width: max-content;
+      
+      & .image {
+        max-width: 100%;
+        width: 8.5em;
+      }
+    }
+
+    ul {
+      li {
+        color: white;
+        font-size: 2.25em;
+        
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        ul {
+          list-style-type: none;
+          
+          li {
+            font-size: inherit;
+          }
+        }
+      }
+    }
+
+  }
+  
   #title {
     align-self: center;
     border-bottom-color: white;
