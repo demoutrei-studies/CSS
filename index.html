@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width: device-width; initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" href="assets/css_icon.png">
     <title>
@@ -18,13 +19,13 @@
             <img class="image" src="assets/return.png">
           </button>
         </div>
-        <div id="title">Table of Contents</div>
+        <div id="title"><span id="title-content">Table of Contents</span></div>
       </div>
-      <ul>
-        <li>
+      <ul id="table-of-contents">
+        <li class="header">
           <a href="#css">CSS?</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#styling">Styling</a>
           <ul>
             <li>
@@ -38,8 +39,8 @@
             </li>
           </ul>
         </li>
-        <li><a href="#syntax">CSS Syntax</a></li>
-        <li>
+        <li class="header"><a href="#syntax">CSS Syntax</a></li>
+        <li class="header">
           <a href="#selectors">Selectors</a>
           <ul>
             <li>
@@ -62,7 +63,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#combinator">Combinators</a>
           <ul>
             <li>
@@ -73,7 +74,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#values-and-units">Values and Units</a>
           <ul>
             <li>
@@ -96,10 +97,10 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#comments">Comments</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#errors">Errors</a>
           <ul>
             <li>
@@ -119,7 +120,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#colors">Colors</a>
           <ul>
             <li>
@@ -133,16 +134,16 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#background-color">Background Color</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#text-color">Text Color</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#border-color">Border Color</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#backgrounds">Backgrounds</a>
           <ul>
             <li>
@@ -156,7 +157,7 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#borders">Borders</a>
           <ul>
             <li>
@@ -176,16 +177,16 @@
             </li>
           </ul>
         </li>
-        <li>
+        <li class="header">
           <a href="#margins">Margins</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#padding">Padding</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#height-and-width">Height and Width</a>
         </li>
-        <li>
+        <li class="header">
           <a href="#max-width">max-width</a>
         </li>
       </ul>
