@@ -17,11 +17,13 @@ body {
     background-color: var(--color-primary);
     background-position: center;
     background-repeat: no-repeat;
-    border: none;
+    border: 0 solid;
+    border-radius: 20%;
     cursor: pointer;
+    padding: 0;
     position: fixed;
     width: max-content;
-    z-index: 0;
+    z-index: 1;
     
     & .image {
       max-width: 100%;
@@ -49,7 +51,7 @@ body {
     scrollbar-width: none;
     top: 0;
     width: max-content;
-    z-index: 1;
+    z-index: 2;
   
     & #header {
       align-items: center;
@@ -207,6 +209,7 @@ body {
       > a {
         display: flex;
         flex-direction: column;
+        text-decoration: none;
       }
       
       .selector {
@@ -244,7 +247,7 @@ body {
       
       .keyword { color: #e25825; }
       
-      .property { color: lightgray; }
+      .property, .combinator { color: lightgray; }
       
       .link { text-decoration: 2px underline; }
       
@@ -255,8 +258,6 @@ body {
       .number { color: limegreen; }
       
       .function { color: yellow; }
-  
-      .combinator { color: lightgray; };
     }
     
     .subsection {

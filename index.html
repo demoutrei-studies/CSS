@@ -226,27 +226,29 @@
           Inline styling may be used to apply a unique style for a single element.
         </p>
         <p>
-          To use inline styles, add the <code> style </code> attribute to the relevant element. The <code> style </code> attribute can contain any CSS property.
+          To use inline styles, add the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style" style="text-decoration: none;"><code><span style="color: #48cae4;">style</span></code></a> attribute to the relevant element. The <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/style" style="text-decoration: none;"><code><span style="color: #48cae4;">style</span></code></a> attribute can contain any CSS property.
         </p>
 <pre class="codeblock">
 <code>
-  This is a &lt;<span class="tag">span</span> <span class="attribute">style</span>=<span class="string">"color: red; font-style: italic;"</span>&gt;Container&lt;/<span class="tag">span</span>&gt;
+  This is a <span class="comment">&lt;</span><span class="tag">span</span> <span class="attribute">style</span>=<span class="string">"color: red; font-style: italic;"</span><span class="comment">&gt;</span>Container<span class="comment">&lt;/</span></span><span class="tag">span</span><span class="comment">&gt;</span>
 </code>
 </pre>
       </section>
       <section id="internal-styling" class="subsection">
         <h2 class="name">Internal CSS</h2>
         <p>
-          An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <code> &lt;style&gt; </code> element, inside the head section.
+          An internal style sheet may be used if one single HTML page has a unique style. The internal style is defined inside the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/style" style="text-decoration: none;" title="Style Information element"><code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">style</span><span style="color: gray;">&gt;</span></code></a> element, inside the head section.
         </p>
 <pre class="codeblock">
 <code>
-  &lt;<span class="tag">style</span>&gt;
-    <span class="selector">span</span> <span class="bracket">&lcub;</span>
-      <span class="property">color</span>: <span class="keyword">red</span>;
-      <span class="property">font-style</span>: <span class="keyword">italic</span>;
-    <span class="bracket">&rcub;</span>
-  &lt;/<span class="tag">style</span>&gt;
+  <span class="comment">&lt;</span><span class="tag">head</span><span class="comment">&gt;</span>
+    <span class="comment">&lt;</span><span class="tag">style</span><span class="comment">&gt;</span>
+      <span class="selector">span</span> <span class="bracket">&lcub;</span>
+        <span class="property">color</span>: <span class="keyword">red</span>;
+        <span class="property">font-style</span>: <span class="keyword">italic</span>;
+      <span class="bracket">&rcub;</span>
+    <span class="comment">&lt;/</span><span class="tag">style</span><span class="comment">&gt;</span>
+  <span class="comment">&lt;/</span><span class="tag">head</span><span class="comment">&gt;</span>
 </code>
 </pre>
       </section>
@@ -255,11 +257,11 @@
           External CSS
         </h2>
         <p>
-          With an external style sheet, you can change the look of an entire website/page by changing just one file. Each HTML page must include a reference to the external style sheet file inside the <code> &lt;link&gt; </code> element, inside the head section.
+          With an external style sheet, you can change the look of an entire website/page by changing just one file. Each HTML page must include a reference to the external style sheet file inside the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/link" style="text-decoration: none;" title="External Resoruce Link element"><code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">link</span><span style="color: gray;">&gt;</span></code></a> element, inside the head section.
         </p>
 <pre class="codeblock">
 <code>
-  &lt;<span class="tag">link</span> <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">href</span>=<span class="string">"<span class="link">styles/index.css</span>"</span>&gt;
+  <span class="comment">&lt;</span><span class="tag">link</span> <span class="attribute">rel</span>=<span class="string">"stylesheet"</span> <span class="attribute">href</span>=<span class="string">"<span class="link">styles/index.css</span>"</span><span class="comment">&gt;</span>
 </code>
 </pre>
       </section>
@@ -352,7 +354,7 @@
       <section id="selector-id" class="subsection">
         <h2 class="name">ID Selectors</h2>
         <p>
-          ID Selectors match an element based on the value of the element's ID attribute. In order for the element to be selected, its <code> id </code> attribute must match exactly the value given in the selector.
+          ID Selectors match an element based on the value of the element's ID attribute. In order for the element to be selected, its <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/ID_selectors" style="text-decoration: none;"><code><span style="color: #48cae4;">id</span></code></a> attribute must match exactly the value given in the selector.
         </p>
 <pre class="codeblock">
 <code>
@@ -376,7 +378,7 @@
       <section id="selector-class" class="subsection">
         <h2 class="name">Class Selectors</h2>
         <p>
-          Class selectors match elements based on the contents of their <code> class </code> attribute.
+          Class selectors match elements based on the contents of their <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/Class_selectors" style="text-decoration: none;"><code><span style="color: #48cae4;">class</span></code></a> attribute.
         </p>
 <pre class="codeblock">
 <code>
@@ -452,7 +454,7 @@
       <p>Combinators define the relationship between the selectors. Using various selectors and combinators, you can precisely select and style the desired elements based on their type, attributes, state, or relationship to other elements.</p>
       <section id="combinator-descendant" class="subsection">
         <h2 class="name">Descendant</h2>
-        <p>The descendant combinator, denoted with one or more spaces, selects nodes that are descendants of the first element. For example, <code> div span </code> will match all <code> &lt;span&gt; </code> elements that are inside a <code> &lt;div&gt; </code> element.</p>
+        <p>The descendant combinator, denoted with one or more spaces, selects nodes that are descendants of the first element. For example, <code><span style="color: #f98129;">div span</span></code> will match all <code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">span</span><span style="color: gray">&gt;</span></code> elements that are inside a <code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">div</span><span style="color: gray;">&gt;</span></code> element.</p>
 <pre class="codeblock">
 <code>
   <span class="selector">div span</span> <span class="bracket">&lcub;</span>
@@ -463,7 +465,7 @@
       </section>
       <section id="combinator-child" class="subsection">
         <h2 class="name">Child</h2>
-        <p>Child combinator is more specific than the descendant combinator. Denoted with the greater-than character <code> &gt; </code>, the child combinator selects nodes that are direct of the first element. Comparing with our previous example, <code> div &gt; span </code> will match only the <code> &lt;span&gt; </code> elements that are direct children of a <code> &lt;div&gt; </code> element.</p>
+        <p>Child combinator is more specific than the descendant combinator. Denoted with the greater-than character <code>&gt;</code>, the child combinator selects nodes that are direct of the first element. Comparing with our previous example, <code><span style="color: #f98129;">div</span> <span style="color: lightgray;">&gt;</span> <span style="color: #f98129;">span</span></code> will match only the <code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">span</span><span style="color: gray">&gt;</span></code> elements that are direct children of a <code><span style="color: gray;">&lt;</span><span style="color: #006ee6;">div</span><span style="color: gray;">&gt;</span></code> element.</p>
 <pre class="codeblock">
 <code>
   <span class="selector">div <span class="combinator">&gt;</span> span</span> <span class="bracket">&lcub;</span>
@@ -479,10 +481,10 @@
       <p>Data types define typical values &lpar;including keywords and units&rpar; accepted by CSS properties and functions.</p>
       <section id="keyword" class="subsection">
         <h2 class="name">Keyword</h2>
-        <p><code>initial</code>: value specified as the property's initial value.</p>
-        <p><code>inherit</code>: computed value of the property on the element's parent.</p>
-        <p><code>max-content</code>: represents the maximum intrinsic size of an element. The keyword expands the element to the largest size needed to display its content without any soft wraps.</p>
-        <p><code>min-content</code>: represents the minimum intrinsic size of an element. The keyword shrinks the element to the smallest possible size without causing avoidable overflow of its content.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/initial" style="text-decoration: none;"><code><span style="color: #e25825;">initial</span></code></a>: value specified as the property's initial value.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/inherit" style="text-decoration: none;"><code><span style="color: #e25825;">inherit</span></code></a>: computed value of the property on the element's parent.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/max-content" style="text-decoration: none;"><code><span style="color: #e25825;">max-content</span></code></a>: represents the maximum intrinsic size of an element. The keyword expands the element to the largest size needed to display its content without any soft wraps.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/min-content" style="text-decoration: none;"><code><span style="color: #e25825;">min-content</span></code></a>: represents the minimum intrinsic size of an element. The keyword shrinks the element to the smallest possible size without causing avoidable overflow of its content.</p>
 <pre class="codeblock">
 <code>
   <span class="property">margin</span>: <span class="keyword">initial</span>;
@@ -494,8 +496,8 @@
       </section>
       <section id="string" class="subsection">
         <h2 class="name">String</h2>
-        <p>A string represents a sequence of characters. Strings are used in numerous CSS properties, such as <code>content</code>, <code>font-family</code>, and <code>quotes</code>.</p>
-        <p>The <code>&lt;string&gt;</code> data type is composed of any number of Unicode characters surrounded by either double &lpar;<code>"</code>&rpar; or single &lpar;<code>'</code>&rpar; quotes.</p>
+        <p>A string represents a sequence of characters. Strings are used in numerous CSS properties, such as <code><span style="color: lightgray;">content</span></code>, <code><span style="color: lightgray;">font-family</span></code>, and <code><span style="color: lightgray;">quotes</span></code>.</p>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/string" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>string<span style="color: gray;">&gt;</span></code></a> data type is composed of any number of Unicode characters surrounded by either double &lpar;<code>"</code>&rpar; or single &lpar;<code>'</code>&rpar; quotes.</p>
 <pre class="codeblock">
 <code>
   <span class="property">font-family</span>: <span class="string">"Courier"</span>;
@@ -504,8 +506,8 @@
       </section>
       <section id="url" class="subsection">
         <h2 class="name">URL</h2>
-        <p>The <code>&lt;url&gt;</code> data type is a pointer to a resource. The resource could be an image, video, CSS file, fotn file, SVG feature, etc.</p>
-        <p>The data type is initialized with the <code>url&lpar;&rpar;</code> function.</p>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_value" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>url<span style="color: gray;">&gt;</span></code></a> data type is a pointer to a resource. The resource could be an image, video, CSS file, fotn file, SVG feature, etc.</p>
+        <p>The data type is initialized with the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/url_function" style="text-decoration: none;"><code><span style="color: yellow;">url</span><span style="color: magenta;">&lpar;&rpar;</span></code></a> function.</p>
 <pre class="codeblock">
 <code>
   <span class="property">background-image</span>: <span class="function">url<span class="bracket">&lpar;</span><span class="string">"<span class="link">assets/cat.jpg</span>"</span><span class="bracket">&rpar;</span></span>
@@ -514,11 +516,11 @@
       </section>
       <section id="numeric" class="subsection">
         <h2 class="name">Numeric</h2>
-        <p><code>&lt;integer&gt;</code>: One or more decimal units 0 through 9, optionally preceded by a negative &lpar;-&rpar; or positive &lpar;+&rpar; sign.</p>
-        <p><code>&lt;number&gt;</code>: Real numbers which may also have a fractional component, for example <code>1</code> or <code>1.34</code>.</p>
-        <p><code>&lt;dimension&gt;</code>: A number with a unit attached to it. This type includes distances &lpar;<code>&lt;time&gt;</code>&rpar;, resolutions &lpar;<code>&lt;resolution&gt;</code>&rpar;, and other quantities.</p>
-        <p><code>&lt;percentage&gt;</code>: A number with a percentage sign attached to it, for example <code>10%</code>.</p>
-        <p><code>&lt;ratio&gt;</code>: A ratio, written with the syntax <code>&lt;number&gt; / &lt;number&gt;</code>.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/integer" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>integer<span style="color: gray;">&gt;</span></code></a>: One or more decimal units 0 through 9, optionally preceded by a negative &lpar;-&rpar; or positive &lpar;+&rpar; sign.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/number" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>number<span style="color: gray;">&gt;</span></code></a>: Real numbers which may also have a fractional component, for example <code><span style="color: limegreen;">1</span></code> or <code><span style="color: limegreen;">1.34</span></code>.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/dimension" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>dimension<span style="color: gray;">&gt;</span></code></a>: A number with a unit attached to it. This type includes durations &lpar;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/time" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>time<span style="color: gray;">&gt;</span></code></a>&rpar;, resolutions &lpar;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/resolution" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>resolution<span style="color: gray;">&gt;</span></code></a>&rpar;, and other quantities.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/percentage" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>percentage<span style="color: gray;">&gt;</span></code></a>: A number with a percentage sign attached to it, for example <code><span style="color: limegreen;">10%</span></code>.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/ratio" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>ratio<span style="color: gray;">&gt;</span></code></a>: A ratio, written with the syntax <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/number" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>number<span style="color: gray;">&gt;</span></code></a> / <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/number" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>number<span style="color: gray;">&gt;</span></code></a>.</p>
 <pre class="codeblock">
 <code>
   <span class="property">flex-wrap</span>: <span class="number">1</span>; <span class="comment">/* &lt;integer&gt; */</span>
@@ -529,11 +531,11 @@
 </pre>
       </section>
       <section id="length" class="subsection">
-        <h2 class="name">&lt;length&gt;</h2>
-        <p>The <code>&lt;length&gt;</code> data type represents a distance value. Lengths can be used in numerous CSS properties, such as <code>width</code>, <code>height</code>, <code>margin</code>, <code>padding</code>, <code>border-width</code>, <code>font-size</code>, and <code>text-shadow</code>.</p>
-        <p><code>em</code>: represents the calculated font-size of the element. If used on the <code>font-size</code> property itself, it represents the inherited <code>font-size</code> of the element.</p>
-        <p><code>vh</code>, <code>vw</code>: represents the percentage of the height and width of the viewport's initial containing block.</p>
-        <p><code>px</code>: One pixel. For screen displays, it traditionally represents one device pixel &lpar;dot&rpar;. However, for printers and high-resolution screens, one CSS pixel implies multiple device pixels. <code>1px = 1in / 96</code>.</p>
+        <h2 class="name"><span style="color: gray;">&lt;</span>length<span style="color: gray;">&gt;</span></h2>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/length" style="color: white; text-decoration: none;"><code><span style="color: gray;">&lt;</span>length<span style="color: gray;">&gt;</span></code></a> data type represents a distance value. Lengths can be used in numerous CSS properties, such as <code><span style="color: lightgray;">width</span></code>, <code><span style="color: lightgray;">height</span></code>, <code><span style="color: lightgray;">margin</span></code>, <code><span style="color: lightgray;">padding</span></code>, <code><span style="color: lightgray;">border-width</span></code>, <code><span style="color: lightgray;">font-size</span></code>, and <code><span style="color: lightgray;">text-shadow</span></code>.</p>
+        <p><code><span style="color: limegreen;">em</span></code>: represents the calculated font-size of the element. If used on the <code><span style="color: lightgray;">font-size</span></code> property itself, it represents the inherited <code><span style="color: lightgray;">font-size</span></code> of the element.</p>
+        <p><code><span style="color: limegreen;">vh</span></code>, <code><span style="color: limegreen;">vw</span></code>: represents the percentage of the height and width of the viewport's initial containing block.</p>
+        <p><code><span style="color: limegreen;">px</span></code>: One pixel. For screen displays, it traditionally represents one device pixel &lpar;dot&rpar;. However, for printers and high-resolution screens, one CSS pixel implies multiple device pixels. <code><span style="color: limegreen;">1px</span> = <span style="color: limegreen;">1in</span> / <span style="color: limegreen;">96</span></code>.</p>
 <pre class="codeblock">
 <code>
   <span class="property">font-size</span>: <span class="number">2em</span>;
@@ -546,7 +548,7 @@
       <section id="value-functions" class="subsection">
         <h2 class="name">Value Functions</h2>
         <p>Value functions are statements that invoke special data processing or calculations to return a value for a property. Value functions represent more complex data types and they may take some input arguments to calculate the return value.</p>
-        <p><code>calc&lpar;&rpar;</code>: represents basic arithmetic calculatiosn on numerical values.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/calc" style="text-decoration: none;"><code><span style="color: yellow;">calc</span><span style="color: magenta;">&lpar;&rpar;</span></code></a>: represents basic arithmetic calculatiosn on numerical values.</p>
 <pre class="codeblock">
 <code>
   <span class="property">width</span>: <span class="function">calc</span><span class="bracket">&lpar;</span><span class="number">1.25em</span> + <span class="number">80vw</span><span class="bracket">&rpar;</span>;
@@ -681,7 +683,7 @@
       <section id="rgb" class="subsection">
         <h2 class="name">RGB</h2>
         <p>
-          The <code> rgb&lpar;&rpar; </code> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors &lpar;<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>&rpar;. Values of each parameters range from 0 to 255.
+          The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/rgb" style="text-decoration: none;"><code><span style="color: yellow;">rgb</span><span style="color: magenta;">&lpar;&rpar;</span></code></a> function is used to generate a color from <span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span> values. The function has three parameters, each allocating per primary colors &lpar;<span style="color: red;">red</span>, <span style="color: green;">green</span>, and <span style="color: blue;">blue</span>&rpar;. Values of each parameters range from 0 to 255.
         </p>
       <div class="example">
         <div class="container" style="background-color: rgb(255, 0, 0);">
@@ -745,7 +747,7 @@
       <section id="hsl" class="subsection">
         <h2 class="name">HSL <i>&lpar;Hue, Saturation, Lightness&rpar;</i></h2>
         <p>
-          The <code> hsl&lpar;&rpar; </code> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel &lpar;from 0 to 360&rpar;; <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
+          The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/color_value/hsl" style="text-decoration: none;"><code><span style="color: yellow;">hsl</span><span style="color: magenta;">&lpar;&rpar;</span></code></a> function is used to generate a color using HSL values. <i>Hue</i> is the degree on the color wheel &lpar;from 0 to 360&rpar;; <i>Saturation</i> is a percentage value: 0% means a shade of gray, 100% is the full color; <i>Lightness</i> is a percentage: 0% is black, 50% is neither light or dark, 100% is white.
         </p>
         <div class="example">
           <div class="container" style="background-color: hsl(0, 100%, 50%);">
@@ -777,7 +779,7 @@
     </section>
     <section id="background-color" class="section">
       <h1 class="name">Background Color</h1>
-      <p>To set a background color, the <code> background-color </code> property is declared.</p>
+      <p>To set a background color, the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-color" style="text-decoration: none;"><code><span style="color: lightgray;">background-color</span></code></a> property is declared.</p>
       <div class="example">
         <div class="container" style="background-color: blue">
           <span class="title">Example</span>
@@ -791,7 +793,7 @@
     </section>
     <section id="text-color" class="section">
       <h1 class="name">Text Color</h1>
-      <p>To set a color to a text, <code> color </code> property is declared.</p>
+      <p>To set a color to a text, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/color" style="text-decoration: none;"><code><span style="color: lightgray;">color</span></code></a> property is declared.</p>
       <div class="example">
         <div class="container">
           <span class="title">Example</span>
@@ -805,7 +807,7 @@
     </section>
     <section id="border-color" class="section">
       <h1 class="name">Border Color</h1>
-      <p>To set a color to the border, <code> border-color </code> property is declared.</p>
+      <p>To set a color to the border, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-color" style="text-decoration: none;"><code><span style="color: lightgray;">border-color</span></code></a> property is declared.</p>
       <div class="example">
         <div class="container" style="border: 2px solid; border-color: limegreen;">
           <span class="title">Example</span>
@@ -821,21 +823,21 @@
     <section id="backgrounds" class="section">
       <h1 class="name">Backgrounds</h1>
       <p>
-        The <code> background </code> property sets all background style properties at once, such as color, image, origin and size, or repeat method. This property is a shorthand for the following CSS properties:
+        The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background" style="text-decoration: none;"><code><span style="color: lightgray;">background</span></code></a> property sets all background style properties at once, such as color, image, origin and size, or repeat method. This property is a shorthand for the following CSS properties:
         <ul>
-          <li><code> background-attachment </code></li>
-          <li><code> background-clip </code></li>
-          <li><code> background-color </code></li>
-          <li><code> background-image </code></li>
-          <li><code> background-origin </code></li>
-          <li><code> background-position </code></li>
-          <li><code> background-repeat </code></li>
-          <li><code> background-size </code></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-attachment" style="text-decoration: none;"><code><span style="color: lightgray;">background-attachment</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-clip" style="text-decoration: none;"><code><span style="color: lightgray;">background-clip</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-color" style="text-decoration: none;"><code><span style="color: lightgray;">background-color</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-image" style="text-decoration: none;"><code><span style="color: lightgray;">background-image</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-origin" style="text-decoration: none;"><code><span style="color: lightgray;">background-origin</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-position" style="text-decoration: none;"><code><span style="color: lightgray;">background-position</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-repeat" style="text-decoration: none;"><code><span style="color: lightgray;">background-repeat</span></code></a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size" style="text-decoration: none;"><code><span style="color: lightgray;">background-size</span></code></a></li>
         </ul>
       </p>
       <section id="image" class="subsection">
         <h2 class="name">Image</h2>
-        <p><code> background-image </code> property is declared to assign a background image to the element.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-image" style="text-decoration: none;"><code><span style="color: lightgray;">background-image</span></code></a> property is declared to assign a background image to the element.</p>
         <div class="example">
           <div class="container" style="background-image: url('/assets/cat.jpg'); background-size: cover;">
             <span class="title" style="color: black;">Example</span>
@@ -849,7 +851,7 @@
       </section>
       <section id="repeat" class="subsection">
         <h2 class="name">Repeat</h2>
-        <p><code> background-repeat </code> property sets how background images are repeated.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-repeat" style="text-decoration: none;"><code><span style="color: lightgray;">background-repeat</span></code></a> property sets how background images are repeated.</p>
         <div class="example">
           <div class="container" style="background-image: url('/assets/cat.jpg'); background-repeat: repeat; background-size: 50%;">
             <span class="title" style="color: black;">Example</span>
@@ -873,7 +875,7 @@
       </section>
       <section id="sizes" class="subsection">
         <h2 class="name">Sizes</h2>
-        <p>The <code> background-size </code> property sets the size of the element's background image.</p>
+        <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-size" style="text-decoration: none;"><code><span style="color: lightgray;">background-size</span></code></a> property sets the size of the element's background image.</p>
         <div class="example">
           <div class="container" style="background-image: url('/assets/cat.jpg'); background-repeat: no-repeat; background-size: 50%;">
             <span class="title" style="color: black;">Example</span>
@@ -893,7 +895,7 @@
       <p>Borders are used to define the visual boundaries around HTML elements.</p>
       <section id="border-style" class="subsection">
         <h2 class="name">Styles</h2>
-        <p><code> border-style </code> property is declared to set the border's style.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-style" style="text-decoration: none;"><code><span style="color: lightgray;">border-style</span></code></a> property is declared to set the border's style.</p>
         <div id="borders">
           <div class="border" style="border-style: dotted;">
             <code>
@@ -949,7 +951,7 @@
       </section>
       <section id="border-width" class="subsection">
         <h2 class="name">Width</h2>
-        <p><code> border-width </code> property is declared to set the border's width.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-width" style="text-decoration: none;"><code><span style="color: lightgray;">border-width</span></code></a> property is declared to set the border's width.</p>
         <div class="example">
           <div class="container" style="border-width: 0.5em;">
             <span class="title">Example</span>
@@ -971,7 +973,7 @@
       </section>
       <section id="border-color-2" class="subsection">
         <h2 class="name">Color</h2>
-        <p><code> border-color </code> property is declared to set the border's color.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-color" style="text-decoration: none;"><code><span style="color: lightgray;">border-color</span></code></a> property is declared to set the border's color.</p>
         <div class="example">
           <div class="container" style="border-color: limegreen;">
             <span class="title">Example</span>
@@ -1007,7 +1009,7 @@
       </section>
       <section id="border-radius" class="subsection">
         <h2 class="name">Radius</h2>
-        <p><code> border-radius </code> property is declared to apply rounded corners to the border.</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/border-radius" style="text-decoration: none;"><code><span style="color: lightgray;">border-radius</span></code></a> property is declared to apply rounded corners to the border.</p>
         <div class="example">
           <div class="container" style="border: 4px solid white; border-radius: 13px;">
             <span class="title">Example</span>
@@ -1036,7 +1038,7 @@
         Margins are properties used to create space around an element, outside of any defined borders. They define the distance between an element's border and the surrounding elements.
       </p>
       <p>
-        <code> margin </code> property is declared to set the element's margin. By default, due to historical reasons, the <code> &lt;body&gt; </code> tag has a default margin of 8px.
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/margin" style="text-decoration: none;"><code><span style="color: lightgray;">margin</span></code></a> property is declared to set the element's margin. By default, due to historical reasons, the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/body" style="text-decoration: none;" title="Document Body element"><code><span style="color: lightgray;">&lt;</span><span style="color: #006ee6;">body</span><span style="color: lightgray;">&gt;</span></code></a> tag has a default margin of 8px.
       </p>
 <pre class="codeblock">
 <code>
@@ -1058,7 +1060,7 @@
     </section>
     <section id="height-and-width" class="section">
       <h1 class="name">Height and Width</h1>
-      <p><code> height </code> and <code> width </code> properties are declared to set an element's height and width dimensions.</p>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/height" style="text-decoration: none;"><code><span style="color: lightgray;">height</span></code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/width" style="text-decoration: none;"><code><span style="color: lightgray;">width</span></code></a> properties are declared to set an element's height and width dimensions.</p>
 <pre class="codeblock">
 <code>
   <span class="property">height</span>: <span class="number">50px</span>;
@@ -1068,7 +1070,7 @@
     </section>
     <section id="max-width" class="section">
       <h1 class="name">max-width</h1>
-      <p><code> max-width </code> property sets the maximum allowed width of an element. This prevents the width of an element to be larger than the <code> max-width </code> property value.</p>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/max-width" style="text-decoration: none;"><code><span style="color: lightgray;">max-width</span></code></a> property sets the maximum allowed width of an element. This prevents the width of an element to be larger than the <code> max-width </code> property value.</p>
 <pre class="codeblock">
 <code>
   <span class="property">max-width</span>: <span class="number">50px</span>;
