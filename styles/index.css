@@ -153,6 +153,16 @@ body {
     .name {
       font-weight: bold;
       font-size: 2.5em;
+
+      &:hover > .anchor {
+        visibility: visible;
+      }
+      
+      > .anchor {
+        color: white;
+        text-decoration: none;
+        visibility: hidden;
+      }
     }
     
     p, li {
