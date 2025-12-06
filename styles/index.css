@@ -47,6 +47,7 @@ body {
     overflow-y: auto;
     padding: 0.2em;
     padding-right: 0.8em;
+    padding-top: 0;
     position: fixed;
     scrollbar-width: none;
     top: 0;
@@ -55,12 +56,14 @@ body {
   
     & #header {
       align-items: center;
+      background-color: inherit;
       display: flex;
       flex-direction: row;
       height: max-content;
       justify-content: center;
-      position: relative;
-      width: max-content;
+      position: sticky;
+      top: 0;
+      width: 100%;
   
       #title {
         border: none;
