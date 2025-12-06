@@ -170,11 +170,44 @@ body {
       height: 3em;
       justify-content: center;
     }
+
+    .example {
+      background-color: inherit;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+      padding: 1em;
+      position: relative;
+      
+      > .container {
+        align-self: center;
+        background-color: black;
+        border-radius: 13px;
+        border: 2px solid white;
+        display: flex;
+        flex-direction: column;
+        font-family: monospace;
+        justify-self: center;
+        padding: 1em;
+        position: relative;
+        width: 100%;
+
+        > .title {
+          color: white;
+          font-size: 2em;
+        }
+      }
+    }
     
     #selectors {
       display: flex;
       flex-direction: column;
       gap: 1.5em;
+      
+      > a {
+        display: flex;
+        flex-direction: column;
+      }
       
       .selector {
         align-self: center;
@@ -185,8 +218,10 @@ body {
         width: 50%;
         
         .name {
+          color: white;
           font-weight: normal;
           font-size: 1.5em;
+          text-decoration: none;
         }
       }
     }
