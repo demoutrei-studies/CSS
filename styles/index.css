@@ -235,6 +235,7 @@ body {
     }
     
     #selectors {
+      align-items: center;
       display: flex;
       flex-direction: column;
       gap: 1.5em;
@@ -243,6 +244,7 @@ body {
         display: flex;
         flex-direction: column;
         text-decoration: none;
+        width: max-content;
       }
       
       .selector {
@@ -251,7 +253,7 @@ body {
         border-radius: 16px;
         padding: 0.5em 1em;
         text-align: center;
-        width: 50%;
+        width: 15em;
         
         .name {
           color: white;
