@@ -502,6 +502,31 @@
 </code>
 </pre>
       </section>
+      <section id="combinator-group" class="subsection">
+        <h2 class="name">Group <a href="#combinator-group" class="anchor">#</a></h2>
+        <p>Comma &lpar;<code>,</code>&rpar; can be used to group selectors together that share style definitions.</p>
+<pre class="codeblock">
+<code>
+  <span class="selector">h1</span>, <span class="selector">h2</span>, <span class="selector">p</span> <span class="bracket">&lcub;</span>
+    <span class="property">color</span>: <span class="keyword">limegreen</span>;
+    <span class="property">font-weight</span>: <span class="keyword">bold</span>;
+  <span class="bracket">&rcub;</span>
+</code>
+</pre>
+        <div class="example">
+          <div class="container">
+            <span class="title">Example</span>
+<pre class="codeblock">
+<code>
+  <span class="comment">&lt;h1&gt;<span style="color: limegreen; font-weight: bold;">This is a header.</span>&lt;/h1&gt;</span>
+  <span class="comment">&lt;h2&gt;<span style="color: limegreen; font-weight: bold;">This is a header.</span>&lt;/h2&gt;</span>
+  <span class="comment">&lt;h3&gt;<span style="color: white;">This is a header.</span>&lt;/h3&gt;</span>
+  <span class="comment">&lt;p&gt;<span style="color: limegreen; font-weight: bold;">This is a paragraph.</span>&lt;/p&gt;</span>
+</code>
+</pre>
+          </div>
+        </div>
+      </section>
     </section>
     <section id="values-and-units" class="section">
       <h1 class="name">Values and Units <a href="#values-and-units" class="anchor">#</a></h1>
