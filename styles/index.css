@@ -222,6 +222,27 @@ body {
       gap: 0.5em;
       padding: 1em;
       position: relative;
+
+      .sliders {
+        display: flex;
+        gap: 0.2em;
+        
+        > .box {
+          padding: 0.5em;
+
+          > .name {
+            font-size: 1.25em;
+          }
+
+          > .slider {
+            width: 100%;
+          }
+        }
+      }
+      
+      #container-rgb {
+        background-color: rgb(0, 0, 0);
+      }
       
       > .container {
         align-self: center;
