@@ -173,6 +173,15 @@ body {
     padding: 1em 2.5em;
     width: 80vw;
     
+    .docs-redirect {
+      color: white;
+      text-decoration: none;
+  
+      &:hover {
+        color: #5865f2;
+      }
+    }
+    
     .name {
       font-weight: bold;
       font-size: 2.5em;
